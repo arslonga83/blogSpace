@@ -15,4 +15,11 @@ fetch('https://apis.scrimba.com/jsonplaceholder/posts')
     document.getElementById('posts').innerHTML = postsHtml
 })
   
-
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const postObj = {
+    title: e.target.title.value,
+    body: e.target.body.value
+  }
+  console.log(postObj)
+})
