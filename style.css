@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: lightgray;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  height: 30px;
+  text-align: center;
+  padding: 8px;
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.post {
+  padding: 8px;
+  text-align: center;
+}
+
+.post h3 {
+  margin-bottom: 8px;
+}
+
+hr {
+  margin-top: 16px;
+}
+

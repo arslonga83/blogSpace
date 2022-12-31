@@ -5,7 +5,7 @@ fetch('https://apis.scrimba.com/jsonplaceholder/posts')
     let postsHtml = ''
     postsArray.map((post) => {
       postsHtml += `
-        <div>
+        <div class="post">
           <h3>${post.title}</h3>
           <p>${post.body}</p>
           <hr></hr>
