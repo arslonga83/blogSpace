@@ -4,13 +4,15 @@
 }
 
 body {
-  background: lightgray;
+  
   font-family: 'Nunito', sans-serif;
 }
 
 nav {
-  height: 30px;
-  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
   background: linear-gradient(to right, #4776e6, #8e54e9);
 }
@@ -20,9 +22,49 @@ main {
   margin: 0 auto;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: lightgray;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+input, textarea, button {
+  font-family: inherit;
+}
+
+input, textarea {
+  padding: 8px;
+  font-size: 1em;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid #8e54e9;
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #4776e6, #8e54e9);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
 .post {
   padding: 8px;
-  text-align: center;
 }
 
 .post h3 {
